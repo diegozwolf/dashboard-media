@@ -1,28 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./styles/TotalBadge.scss"
-import faceLogo from '../components/images/icon-facebook.svg';
-import Arrow from '../components/images/icon-down.svg';
 
-class TotalBadge extends React.Component {
-    render() {
-        return (
-            <div className="total-bage">
-                <div className="total-bage__main-line">
-                    <img src={faceLogo} className="total-bage__main-line--network-img" alt="netwotk logo"></img>
-                    <p>user account</p>
-                </div>
-                <div className="total-bage__number">
-                    <p className="total-bage__number--big">1978</p>
-                    <p className="total-bage__number--user">followers</p>
-                </div>
-                <div className="total-bage__update">
-                        <p className="total-bage__update--number"><img src={Arrow} className="total-bage__update--arrow" alt="netwotk logo"></img>
-                        80 users
-                    </p>
-                </div>
+
+const TotalBadge = ({ logoBox, userAccount, numberFollow, kindFollows, Arrow, todayNumber, borderBox, theme, arrowClass, onClick }) => {
+
+
+    return (
+        // <TotalBadge BorderBox="" logoBox="" userAccount=""  numberFollow="" kindFollows="" arrowType="" todayNumber=""  />
+    
+        <div className={`total-bage ${borderBox} ${theme}`} onClick={onClick}>
+            <div className="total-bage__main-line">
+                <img src={logoBox} className="network-img" alt="netwotk logo"></img>
+                <p className="acount-txt">{userAccount}</p>
             </div>
-        )
-    }
+            <div className="total-bage__number">
+                <p className="big-number">{numberFollow}</p>
+                <p className="number--kind">{kindFollows}</p>
+            </div>
+            <div className="total-bage__update">
+                <p className={`update-number ${arrowClass} ${theme}`} ><img src={Arrow} 
+                
+                className="update-arrow" alt="netwotk logo"></img>
+                    {todayNumber} Today
+                </p>
+            </div>
+        </div>
+    )
+
+}
+
+TotalBadge.defaultProps = {
+    borderBox: ''
 }
 
 export default TotalBadge;
