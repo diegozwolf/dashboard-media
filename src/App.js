@@ -41,7 +41,23 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
-        <button onClick={() => themeToggler()}>Change Theme</button>
+
+        <div className="row header">
+          <div className="col-6 tittle-space">
+            <h5 className={`first-title ${theme}`} >Social Media Dashboard</h5>
+            <p>Total Followers: 23,0004</p>
+          </div>
+          <div className="col-6 btn-col">
+            <p>Dark Mode</p>
+
+            <label class="switchBtn">
+              <input type="checkbox" onClick={() => themeToggler()} />
+              <div class="slide round"></div>
+            </label>
+          </div>
+        </div>
+        
+                
         <div className="total-media">
           <TotalBadge theme={theme} borderBox="face-border" logoBox={faceLogo} userAccount="@nathamf"  numberFollow="1987" kindFollows="FOLLOWERS" Arrow={ArrowUp} arrowClass="arrow-up" todayNumber="12" onClick={() => handleModal()} />
           <TotalBadge theme={theme} borderBox="twit-border" logoBox={twitLogo} userAccount="@nathamf"  numberFollow="1044" kindFollows="FOLLOWERS" Arrow={ArrowUp} arrowClass="arrow-up" todayNumber="99" onClick={() => handleModal()} />
@@ -49,8 +65,17 @@ function App() {
           <TotalBadge theme={theme} borderBox="yout-border" logoBox={youtLogo} userAccount="@nathamf"  numberFollow="8239" kindFollows="SUSCRIBERS" Arrow={ArrowDown} arrowClass="arrow-down" todayNumber="144" onClick={() => handleModal()} />
         </div>
 
-
-        <DailyBadge />
+        <div className="daily-media">
+          <h6 className={`second-title ${theme}`}>Overview - Today</h6>
+          <DailyBadge theme={theme}  interactionType="Page Views" logoBox={faceLogo} interactionNumber="87"  Arrow={ArrowUp} arrowClass="arrow-up" interactionAmmount="3"/>
+          <DailyBadge theme={theme}  interactionType="Likes" logoBox={faceLogo} interactionNumber="52"  Arrow={ArrowDown} arrowClass="arrow-down" interactionAmmount="2"/>
+          <DailyBadge theme={theme}  interactionType="Likes" logoBox={instaLogo} interactionNumber="5462"  Arrow={ArrowUp} arrowClass="arrow-up" interactionAmmount="2257"/>
+          <DailyBadge theme={theme}  interactionType="Profile Views" logoBox={instaLogo} interactionNumber="52k"  Arrow={ArrowUp} arrowClass="arrow-up" interactionAmmount="1375"/>
+          <DailyBadge theme={theme}  interactionType="Retweets" logoBox={twitLogo} interactionNumber="117"  Arrow={ArrowUp} arrowClass="arrow-up" interactionAmmount="303"/>
+          <DailyBadge theme={theme}  interactionType="Likes" logoBox={twitLogo} interactionNumber="507"  Arrow={ArrowUp} arrowClass="arrow-up" interactionAmmount="553"/>
+          <DailyBadge theme={theme}  interactionType="Likes" logoBox={youtLogo} interactionNumber="107"  Arrow={ArrowDown} arrowClass="arrow-down" interactionAmmount="19"/>
+          <DailyBadge theme={theme}  interactionType="Total Views" logoBox={youtLogo} interactionNumber="1407"  Arrow={ArrowDown} arrowClass="arrow-down" interactionAmmount="12"/>
+        </div>
 
         <div>
           <div className="overlay" onClick={() => setPopup(currentState => !currentState)}></div>

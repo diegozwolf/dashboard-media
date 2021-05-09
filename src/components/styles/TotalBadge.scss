@@ -3,7 +3,7 @@
     width: 160px;
     height: 140px;
     border-radius: 3px;
-    margin: 0 10px;
+    margin: 10px;
     cursor: pointer;
     display: inline-block;
     .total-bage__main-line {
@@ -50,6 +50,7 @@
         }
         .update-arrow {
             margin-right: 5px;
+            width: 5px;
         }
     }
 }

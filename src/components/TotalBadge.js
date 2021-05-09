@@ -5,9 +5,7 @@ import "./styles/TotalBadge.scss"
 const TotalBadge = ({ logoBox, userAccount, numberFollow, kindFollows, Arrow, todayNumber, borderBox, theme, arrowClass, onClick }) => {
 
 
-    return (
-        // <TotalBadge BorderBox="" logoBox="" userAccount=""  numberFollow="" kindFollows="" arrowType="" todayNumber=""  />
-    
+    return (    
         <div className={`total-bage ${borderBox} ${theme}`} onClick={onClick}>
             <div className="total-bage__main-line">
                 <img src={logoBox} className="network-img" alt="netwotk logo"></img>

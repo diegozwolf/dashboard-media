@@ -1,3 +1,95 @@
+.header {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-bottom: 25px;
+  .tittle-space {
+    padding-left: 0;
+    h5 {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 0;
+      color: #1F1F29;
+      @media (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+    h5.dark {
+      color:#fff;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 8px;
+      font-weight: 600;
+    }
+  }
+  .btn-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p {
+      margin: 0 5px 0 0;
+      font-size: 8px;
+      font-weight: bold;
+    }
+
+
+
+
+    .switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 18px;
+    }
+    .switchBtn input {display:none;}
+    .slide {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        padding: 2px;
+        color: #fff;
+    }
+    .slide:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 18px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked + .slide {
+        background-color: #8CE196;
+    }
+    input:focus + .slide {
+        box-shadow: 0 0 1px #01aeed;
+    }
+    input:checked + .slide:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+        left: -24px;
+    }
+
+    .slide.round {
+      border-radius: 34px;
+    }
+    .slide.round:before {
+      border-radius: 50%;
+    }
+
+
+  }
+}
 .total-media {
   overflow-x: hidden;
   text-align: center;
@@ -8,5 +100,32 @@
     width: 80%;
     margin: 0 auto;
   }
+}
+
+h6 {
+  text-align: left;
+  padding-left: 50px;
+  font-weight: bold;
+  @media (max-width: 600px) {
+    padding-left: 0;
+  }
+}
+
+.daily-media {
+  padding-top: 15px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  @media (max-width: 600px) {
+    max-width: 280px;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+}
+.second-title {
+  color: #666678;
+}
+.second-title.dark {
+  color: #fff;
 }
 

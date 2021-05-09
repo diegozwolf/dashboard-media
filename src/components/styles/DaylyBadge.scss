@@ -1,0 +1,70 @@
+.daily-badge {
+    background-color: #F0F3FA;
+    width: 160px;
+    height: 70px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    .daily-badge-interaction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 0;
+        .interaction-type {
+            margin-bottom: 0PX;
+            font-size: 8px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .network-img {
+            width: 11px;
+        }
+    }
+
+    .daily-badge-numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 0;
+        .interaction-number {
+            margin-bottom: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            margin-left: 10px;
+        }
+        .interaction-ammount {
+            font-size: 8px;
+            font-weight: bold;
+            margin-bottom: 0;
+            .interaction-arrow {
+                margin-right: 5px;
+                width: 5px;
+            }
+        }
+    }
+}
+
+.daily-badge:hover {
+    background-color: #E1E3F0;
+}
+
+.daily-badge.dark:hover {
+    background-color: #333A56;
+}
+.daily-badge.dark {
+    background-color: #252B43;
+    .interaction-number {
+        color: #fff;
+    }
+}
+
+.interaction-ammount.arrow-up,
+.interaction-ammount.arrow-up.dark {
+    color: #1eb589;
+}
+.interaction-ammount.arrow-down,
+.interaction-ammount.arrow-down.dark {
+    color: #dc414c;
+}
