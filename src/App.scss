@@ -4,7 +4,7 @@
   padding-top: 10px;
   margin-bottom: 25px;
   .tittle-space {
-    padding-left: 0;
+    padding-left: 10px;
     h5 {
       font-size: 17px;
       font-weight: bold;
@@ -33,9 +33,6 @@
       font-weight: bold;
     }
 
-
-
-
     .switchBtn {
     position: relative;
     display: inline-block;
@@ -50,7 +47,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: #AEB2CB;
         -webkit-transition: .4s;
         transition: .4s;
         padding: 2px;
@@ -68,7 +65,7 @@
         transition: .4s;
     }
     input:checked + .slide {
-        background-color: #8CE196;
+      background: linear-gradient(90deg, rgba(69,156,199,1) 0%, rgba(65,208,146,1) 100%);
     }
     input:focus + .slide {
         box-shadow: 0 0 1px #01aeed;
@@ -78,6 +75,8 @@
         -ms-transform: translateX(26px);
         transform: translateX(26px);
         left: -24px;
+        background: #252B43;
+
     }
 
     .slide.round {
@@ -99,6 +98,7 @@
     white-space: nowrap;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 

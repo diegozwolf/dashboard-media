@@ -1,0 +1,66 @@
+.overlay {
+    z-index: 10;
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container {
+    background: white;
+    color: black;
+    z-index: 15;
+    width: 70%;
+    height: 380px;
+    position: absolute;
+    top: 40px;
+    left: 15vw;
+    border-radius: 10px;
+    .head-section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        h5 {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        button {
+            color: #646465;
+            border: none;
+            background: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    .account-section {
+        display: flex;
+        margin-top: 10px;
+        .network-img {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+        }
+        .acount-txt {
+            margin-bottom: 0;
+            font-size: 9px;
+            font-weight: 700;
+        }
+    }
+
+    .data-section {
+        display: flex;
+        .big-number{
+            font-size: 25px;
+            margin-bottom: 0;
+            font-weight: 700;
+            color: #616571;
+        }
+        .text-description {
+            font-size: 8px;
+            font-weight: 400;
+            width: 30px;
+        }
+    }
+}

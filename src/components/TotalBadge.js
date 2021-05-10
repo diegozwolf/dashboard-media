@@ -1,25 +1,24 @@
 import React, { useState } from 'react';
-import "./styles/TotalBadge.scss"
+import "./styles/TotalBadge.scss";
 
 
-const TotalBadge = ({ logoBox, userAccount, numberFollow, kindFollows, Arrow, todayNumber, borderBox, theme, arrowClass, onClick }) => {
-
+const TotalBadge = ({ theme, data, onClick }) => {
 
     return (    
-        <div className={`total-bage ${borderBox} ${theme}`} onClick={onClick}>
+        <div className={`total-bage ${data.borderBox} ${theme}`} onClick={onClick}>
             <div className="total-bage__main-line">
-                <img src={logoBox} className="network-img" alt="netwotk logo"></img>
-                <p className="acount-txt">{userAccount}</p>
+                <img src={data.logoBox} className="network-img" alt="netwotk logo"></img>
+                <p className="acount-txt">{data.userAccount}</p>
             </div>
             <div className="total-bage__number">
-                <p className="big-number">{numberFollow}</p>
-                <p className="number--kind">{kindFollows}</p>
+                <p className="big-number">{data.numberFollow}</p>
+                <p className="number--kind">{data.kindFollows}</p>
             </div>
             <div className="total-bage__update">
-                <p className={`update-number ${arrowClass} ${theme}`} ><img src={Arrow} 
+                <p className={`update-number ${data.arrowClass} ${theme}`} ><img src={data.Arrow} 
                 
                 className="update-arrow" alt="netwotk logo"></img>
-                    {todayNumber} Today
+                    {data.todayNumber} Today
                 </p>
             </div>
         </div>
