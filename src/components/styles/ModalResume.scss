@@ -8,8 +8,7 @@
     bottom: 0;
 }
 .container {
-    background: white;
-    color: black;
+    background: #F8F9FE;
     z-index: 15;
     width: 70%;
     height: 380px;
@@ -17,6 +16,7 @@
     top: 40px;
     left: 15vw;
     border-radius: 10px;
+    padding-left: 15px;
     .head-section {
         margin-top: 20px;
         display: flex;
@@ -25,6 +25,7 @@
             font-size: 17px;
             font-weight: bold;
             margin-bottom: 0;
+            color: #000;
         }
         button {
             color: #646465;
@@ -51,8 +52,13 @@
 
     .data-section {
         display: flex;
-        .big-number{
-            font-size: 25px;
+        align-items: center;
+        margin: 20px 0;
+        .col-number {
+            padding-left: 0;
+        }
+        .follow-number{
+            font-size: 23px;
             margin-bottom: 0;
             font-weight: 700;
             color: #616571;
@@ -60,7 +66,39 @@
         .text-description {
             font-size: 8px;
             font-weight: 400;
-            width: 30px;
+            color: #616571;
+            margin-bottom: 0;
+            padding: 0 20px 0 15px;
         }
+        .mid-txt {
+            width: 94px;
+        }
+        .update-number {
+            font-size: 23px;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+    }
+
+    .chart-cont {
+        .date-txt {
+            font-size: 10px;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    }
+}
+
+.container.dark {
+    background-color: #252B43;
+    h5{
+        color: #fff;
+    }
+    .follow-number {
+        color: #fff;
+    }
+    .text-description {
+        color: #fff;
+        font-weight: 300;
     }
 }

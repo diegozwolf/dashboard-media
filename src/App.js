@@ -70,7 +70,6 @@ const mediaTotalInfo = [{
     kindFollows: "FOLLOWERS",
     Arrow: ArrowUp,
     arrowClass: "arrow-up",
-    arrowClass: "arrow-up",
     todayNumber: "12",
     tenDaysArrow: ArrowUp,
     tenDaysArrowTxt:"arrow-up",
@@ -93,10 +92,9 @@ const mediaTotalInfo = [{
     kindFollows: "SUSCRIBERS",
     Arrow: ArrowDown,
     arrowClass: "arrow-down",
-    arrowClass: "arrow-up",
     todayNumber: "12",
-    tenDaysArrow: ArrowUp,
-    tenDaysArrowTxt:"arrow-up",
+    tenDaysArrow: ArrowDown,
+    tenDaysArrowTxt:"arrow-down",
     tenDayNumber:"81",
     todayNumber: "144",
     interactionType:"Total Views",
@@ -322,7 +320,7 @@ function App() {
           
         </div>
 
-        <ModalResume data={data} isOpen={popup} onClick={()=>setPopup(currentState=>!currentState)} />
+        <ModalResume theme={theme} data={data} isOpen={popup} onClick={()=>setPopup(currentState=>!currentState)} />
 
       </StyledApp>
     </ThemeProvider>
