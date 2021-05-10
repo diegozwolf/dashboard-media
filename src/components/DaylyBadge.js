@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./styles/DaylyBadge.scss"
-
 
 
 const DailyBadge = ({ data, onClick, theme }) => {
@@ -9,12 +8,12 @@ const DailyBadge = ({ data, onClick, theme }) => {
         <div className={`daily-badge ${theme}`}  onClick={onClick}>
             <div className="daily-badge-interaction">
                 <p className="interaction-type">{data.interactionType}</p>
-                <img src={data.logoBox} className="network-img" alt="network image"></img>
+                <img src={data.logoBox} className="network-img" alt="network logo"></img>
             </div>
             <div className="daily-badge-numbers">
                 <p className="interaction-number">{data.interactionNumber}</p>
                 <p className={`interaction-ammount ${data.arrowClass} ${theme}`}>
-                    <img src={data.Arrow} className="interaction-arrow"></img>
+                    <img src={data.Arrow} className="interaction-arrow" alt="arrow amount"></img>
                     {data.interactionAmmount}%
                 </p>
             </div>

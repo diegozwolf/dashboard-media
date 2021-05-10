@@ -1,34 +1,71 @@
-import React, { useEffect, useState } from 'react';
-import { Line } from 'react-chartjs-2';
+import React from "react"; 
+import {
+        LineChart,
+        Line,
+        XAxis,
+        YAxis,
+        CartesianGrid,
+        Tooltip,
+    } from "recharts";
+
 import "./styles/ModalResume.scss";
+const Modalresume  = ({ data, isOpen, theme ,onClick }) => {
 
-const Modalresume = ({ data, isOpen, theme ,onClick }) => {
-    
-    const [chartData, setChartdata] = useState({})
-
-    const chart = () => {
-        setChartdata({
-            labels: [4,5,6,7,8,9,10,11,12,13],
-            datasets:[
-                {
-                    label: 'Followers',
-                    data: [32,45,60,12,67,22,32,43,35,19],
-                    backgrounColor: [
-                        'hsl(243, 51%, 70%)',
-                    ],
-                    borderColor: 'hsl(243, 51%, 70%)',
-                    borderWidth: 1,
-                    fill: false,
-                }
-            ]
-        })
-    }
-
-    useEffect(()=>{
-        chart()
-    }, [])
+    const dataChart = [
+        {
+            name: "4",
+            pv: 240,
+            amt: 100
+        },
+        {
+            name: "5",
+            pv: 98,
+            amt: 1000
+        },
+        {
+            name: "6",
+            pv: 207,
+            amt: 1000
+        },
+        {
+            name: "7",
+            pv: 18,
+            amt: 1000
+        },
+        {
+            name: "8",
+            pv: 290,
+            amt: 1000
+        },
+        {
+            name: "9",
+            pv: 38,
+            amt: 1000
+        },
+        {
+            name: "10",
+            pv: 39,
+            amt: 1000
+        },
+        {
+            name: "11",
+            pv: 45,
+            amt: 1000
+        },
+        {
+            name: "12",
+            pv: 144,
+            amt: 1000
+        },
+        {
+            name: "13",
+            pv: 30,
+            amt: 100
+        }
+    ];
 
     if(!isOpen) return null
+    
     return (
         <div>
             <div className="overlay" onClick={onClick}></div>
@@ -50,11 +87,10 @@ const Modalresume = ({ data, isOpen, theme ,onClick }) => {
                         <div className="col-md-4 col-lg-4 col-sm-4 col-xs-12 d-flex align-items-center">
                             <p className={`update-number ${data.tenDaysArrowTxt} ${theme}`} >
                                 <img src={data.tenDaysArrow} className="update-arrow" alt="netwotk logo"></img>
-                                {data. tenDayNumber} 
+                                {data.tenDayNumber} 
                             </p>
                             <span className="text-description mid-txt">New followers in the past 10 days</span>
                         </div>
-
                         <div className="col-md-4 col-lg-4 col-sm-4 col-xs-12 d-flex align-items-center">                       
                             <p className={`update-number ${data.arrowClass} ${theme}`} >
                                 <img src={data.Arrow} className="update-arrow" alt="netwotk logo"></img>
@@ -66,9 +102,23 @@ const Modalresume = ({ data, isOpen, theme ,onClick }) => {
                     <div className="chart-section">
                         <p className="date-txt">{data.date}</p>
                         <div className="chart-cont">
-                            <Line data={chartData} options={{
-                                responsive: true,
-                            }} />
+                            <LineChart
+                                width={650}
+                                height={180}
+                                data={dataChart}
+                                margin={{
+                                top: 5,
+                                right: 10,
+                                left: 1,
+                                bottom: 5,
+                            }}
+                            >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" fontSize="8px" />
+                                <YAxis  fontSize="8px"/>
+                                <Tooltip />
+                                <Line type="monotone" dataKey="pv" stroke="hsl(243, 51%, 70%)" activeDot={{ r: 4 }} />
+                            </LineChart>
                         </div>
                     </div>
                 </div>
@@ -77,4 +127,4 @@ const Modalresume = ({ data, isOpen, theme ,onClick }) => {
 
 }
 
-export default Modalresume;
+export default Modalresume; 
