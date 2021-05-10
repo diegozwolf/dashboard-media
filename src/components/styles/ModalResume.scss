@@ -10,48 +10,51 @@
 .container {
     background: hsl(227, 47%, 96%);
     z-index: 15;
-    width: 70%;
-    height: 400px;
+    width: 60%;
+    height: 470px;
     position: absolute;
-    top: 40px;
-    left: 15vw;
+    top: 120px;
+    left: 20vw;
     border-radius: 10px;
     padding-left: 15px;
     @media (max-width: 600px) {
-        width: 95%;
-        height: 400px;
-        top: 100px;
-        left: 2.5vw;
+        width: 90%;
+        height: 600px;
+        top: 150px;
+        left: 5vw;
     }
     .head-section {
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
-        h5 {
-            font-size: 17px;
+        h4 {
             font-weight: bold;
             margin-bottom: 0;
             color: hsl(230, 17%, 14%);
         }
         button {
-            color:  hsl(230, 22%, 74%);
+            color:  hsl(228, 12%, 44%);
             border: none;
             background: none;
-            font-size: 12px;
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 400;
+            position: absolute;
+            right: 8px;
+            top: 0;
+        
         }
     }
     .account-section {
         display: flex;
         margin-top: 10px;
         .network-img {
-            width: 15px;
-            height: 15px;
+            width: 17px;
+            height: 17px;
             margin-right: 8px;
         }
         .acount-txt {
             margin-bottom: 0;
-            font-size: 9px;
+            font-size: 12px;
             font-weight: 700;
         }
     }
@@ -64,33 +67,41 @@
             padding-left: 0;
         }
         .follow-number{
-            font-size: 23px;
+            font-size: 40px;
             margin-bottom: 0;
             font-weight: 700;
             color:  hsl(228, 12%, 44%);
         }
         .text-description {
-            font-size: 8px;
+            font-size: 12px;
             font-weight: 400;
             color:  hsl(228, 12%, 44%);
             margin-bottom: 0;
             padding: 0 20px 0 15px;
         }
         .mid-txt {
-            width: 94px;
+            width: 140px;
         }
         .update-number {
-            font-size: 22px;
+            font-size: 40px;
             margin-bottom: 0;
             font-weight: 700;
+        }
+        .update-arrow {
+            width: 10px;
+            margin: 0 10px;
         }
     }
 
     .chart-section {
         .date-txt {
-            font-size: 10px;
+            color: hsl(228, 12%, 44%);
+            font-size: 16px;
             margin-bottom: 0;
-            font-weight: 500;
+            font-weight: 400;
+        }
+        .date-txt.dark {
+            color: hsl(0, 0%, 100%);
         }
         .chart-cont {
             overflow-x: auto;

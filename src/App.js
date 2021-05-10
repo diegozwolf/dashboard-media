@@ -258,7 +258,7 @@ function App() {
 
         <div className="row header">
           <div className="col-6 tittle-space">
-            <h5 className={`first-title ${theme}`} >Social Media Dashboard</h5>
+            <h4 className={`first-title ${theme}`} >Social Media Dashboard</h4>
             <p>Total Followers: 23,0004</p>
           </div>
           <div className="col-6 btn-col">
@@ -279,7 +279,7 @@ function App() {
         </div>
 
         <div className="daily-media">
-          <h6 className={`second-title ${theme}`}>Overview - Today</h6>
+          <h5 className={`second-title ${theme}`}>Overview - Today</h5>
           
           {mediaDailyInfo.map(item =>
             <DailyBadge theme={theme} data={item} onClick={() => handleModal(item)} />

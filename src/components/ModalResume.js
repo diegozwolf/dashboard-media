@@ -71,8 +71,8 @@ const Modalresume  = ({ data, isOpen, theme ,onClick }) => {
             <div className="overlay" onClick={onClick}></div>
                 <div className={`container ${theme}`}>
                     <div className="head-section">
-                        <h5>{data.network} Followers</h5> 
-                        <button onClick={onClick}>X</button>
+                        <h4>{data.network} Followers</h4> 
+                        <button onClick={onClick}>x</button>
                     </div>
                     <div className="account-section">
                         <img src={data.logoBox} className="network-img" alt="netwotk logo"></img>
@@ -100,11 +100,11 @@ const Modalresume  = ({ data, isOpen, theme ,onClick }) => {
                         </div>
                     </div>
                     <div className="chart-section">
-                        <p className="date-txt">{data.date}</p>
+                        <p className={`date-txt ${theme}`}>{data.date}</p>
                         <div className="chart-cont">
                             <LineChart
-                                width={650}
-                                height={180}
+                                width={850}
+                                height={240}
                                 data={dataChart}
                                 margin={{
                                 top: 5,
