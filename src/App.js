@@ -36,7 +36,6 @@ const mediaTotalInfo = [{
     interactionNumber:"87",
     date: "May 4 - May 13",
     interactionType: "Page Views",
-    interactionNumber:"87",
     interactionAmmount:"3"
   },{
     network: "Twitter",
@@ -48,7 +47,7 @@ const mediaTotalInfo = [{
     Arrow: ArrowUp,
     arrowClass: "arrow-up",
     arrowClass: "arrow-up",
-    todayNumber: "12",
+    todayNumber: "27",
     tenDaysArrow: ArrowUp,
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
@@ -56,10 +55,7 @@ const mediaTotalInfo = [{
     interactionType:"Total Views",
     interactionNumber:"87",
     date: "May 4 - May 13",
-    interactionNumber:"87",
-    date: "May 4 - May 13",
     interactionType: "Page Views",
-    interactionNumber:"87",
     interactionAmmount:"3"
   },{
     network: "Instagram",
@@ -78,10 +74,7 @@ const mediaTotalInfo = [{
     interactionType:"Total Views",
     interactionNumber:"87",
     date: "May 4 - May 13",
-    interactionNumber:"87",
-    date: "May 4 - May 13",
     interactionType: "Page Views",
-    interactionNumber:"87",
     interactionAmmount:"3"
   },{
     network: "Youtube",
@@ -98,8 +91,6 @@ const mediaTotalInfo = [{
     tenDayNumber:"81",
     todayNumber: "144",
     interactionType:"Total Views",
-    interactionNumber:"87",
-    date: "May 4 - May 13",
     interactionNumber:"87",
     date: "May 4 - May 13",
     interactionType: "Page Views",
@@ -125,7 +116,6 @@ const mediaDailyInfo = [
     interactionNumber:"87",
     date: "May 4 - May 13",
     interactionType: "Page Views",
-    interactionNumber:"87",
     interactionAmmount:"3"
   },{
     network: "Facebook",
@@ -141,10 +131,9 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"87",
+    interactionNumber:"52",
     date: "May 4 - May 13",
     interactionType: "Likes",
-    interactionNumber:"52",
     interactionAmmount:"2"
   },{
     network: "Instagram",
@@ -160,7 +149,6 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"5462",
     date: "May 4 - May 13",
     interactionType: "Likes",
     interactionNumber:"5462",
@@ -180,7 +168,6 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"5462",
     date: "May 4 - May 13",
     interactionType: "Profile Views",
     interactionNumber:"52k",
@@ -200,7 +187,6 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"5462",
     date: "May 4 - May 13",
     interactionType: "Retweets",
     interactionNumber:"117",
@@ -220,7 +206,6 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"5462",
     date: "May 4 - May 13",
     interactionType: "Likes",
     interactionNumber:"507",
@@ -239,7 +224,7 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"5462",
+    Number:"5462",
     date: "May 4 - May 13",
     interactionType: "Likes",
     interactionNumber:"107",
@@ -258,7 +243,6 @@ const mediaDailyInfo = [
     tenDaysArrowTxt:"arrow-up",
     tenDayNumber:"81",
     interactionType:"Total Views",
-    interactionNumber:"5462",
     date: "May 4 - May 13",
     interactionType: "Total Views",
     interactionNumber:"107",
@@ -297,9 +281,9 @@ function App() {
           <div className="col-6 btn-col">
             <p>Dark Mode</p>
 
-            <label class="switchBtn">
+            <label className="switchBtn">
               <input type="checkbox" onClick={() => themeToggler()} />
-              <div class="slide round"></div>
+              <div className="slide round"></div>
             </label>
           </div>
         </div>
