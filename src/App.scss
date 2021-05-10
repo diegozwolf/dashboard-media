@@ -9,15 +9,15 @@
     }
     h5 {
       font-size: 17px;
-      font-weight: bold;
+      font-weight: 700;
       margin-bottom: 0;
-      color: #1F1F29;
+      color: hsl(230, 17%, 14%);
       @media (max-width: 600px) {
         font-size: 15px;
       }
     }
     h5.dark {
-      color:#fff;
+      color: hsl(0, 0%, 100%);
     }
     p {
       margin-bottom: 0;
@@ -32,7 +32,7 @@
     p {
       margin: 0 5px 0 0;
       font-size: 8px;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     .switchBtn {
@@ -49,11 +49,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #AEB2CB;
+        background-color: hsl(228, 34%, 66%);
         -webkit-transition: .4s;
         transition: .4s;
         padding: 2px;
-        color: #fff;
+        color: hsl(0, 0%, 100%);
     }
     .slide:before {
         position: absolute;
@@ -62,22 +62,22 @@
         width: 14px;
         left: 18px;
         bottom: 2px;
-        background-color: white;
+        background-color: hsl(0, 0%, 100%);
         -webkit-transition: .4s;
         transition: .4s;
     }
     input:checked + .slide {
-      background: linear-gradient(90deg, rgba(69,156,199,1) 0%, rgba(65,208,146,1) 100%);
+      background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
     }
     input:focus + .slide {
-        box-shadow: 0 0 1px #01aeed;
+        box-shadow: 0 0 1px hsl(195, 100%, 50%);
     }
     input:checked + .slide:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
         left: -24px;
-        background: #252B43;
+        background:   hsl(230, 17%, 14%);
 
     }
 
@@ -107,7 +107,7 @@
 h6 {
   text-align: left;
   padding-left: 50px;
-  font-weight: bold;
+  font-weight: 700;
   @media (max-width: 600px) {
     padding-left: 0;
   }
@@ -125,9 +125,9 @@ h6 {
   }
 }
 .second-title {
-  color: #666678;
+  color: hsl(228, 12%, 44%);
 }
 .second-title.dark {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 

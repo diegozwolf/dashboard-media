@@ -1,5 +1,5 @@
 .daily-badge {
-    background-color: #F0F3FA;
+    background-color:  hsl(227, 47%, 96%);
     width: 160px;
     height: 70px;
     border-radius: 3px;
@@ -14,7 +14,7 @@
         .interaction-type {
             margin-bottom: 0PX;
             font-size: 8px;
-            font-weight: bold;
+            font-weight: 700;
             padding-left: 10px;
         }
         .network-img {
@@ -30,13 +30,13 @@
         .interaction-number {
             margin-bottom: 0;
             font-size: 20px;
-            font-weight: bold;
-            color: #000;
+            font-weight: 700;
+            color: hsl(230, 17%, 14%);
             margin-left: 10px;
         }
         .interaction-ammount {
             font-size: 8px;
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 0;
             .interaction-arrow {
                 margin-right: 5px;
@@ -54,17 +54,17 @@
     background-color: #333A56;
 }
 .daily-badge.dark {
-    background-color: #252B43;
+    background-color: hsl(228, 28%, 20%);
     .interaction-number {
-        color: #fff;
+        color:  hsl(0, 0%, 100%);
     }
 }
 
 .interaction-ammount.arrow-up,
 .interaction-ammount.arrow-up.dark {
-    color: #1eb589;
+    color: hsl(163, 72%, 41%);
 }
 .interaction-ammount.arrow-down,
 .interaction-ammount.arrow-down.dark {
-    color: #dc414c;
+    color: hsl(356, 69%, 56%);
 }

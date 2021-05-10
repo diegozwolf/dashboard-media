@@ -8,7 +8,7 @@
     bottom: 0;
 }
 .container {
-    background: #F8F9FE;
+    background: hsl(227, 47%, 96%);
     z-index: 15;
     width: 70%;
     height: 400px;
@@ -31,10 +31,10 @@
             font-size: 17px;
             font-weight: bold;
             margin-bottom: 0;
-            color: #000;
+            color: hsl(230, 17%, 14%);
         }
         button {
-            color: #646465;
+            color:  hsl(230, 22%, 74%);
             border: none;
             background: none;
             font-size: 12px;
@@ -67,12 +67,12 @@
             font-size: 23px;
             margin-bottom: 0;
             font-weight: 700;
-            color: #616571;
+            color:  hsl(228, 12%, 44%);
         }
         .text-description {
             font-size: 8px;
             font-weight: 400;
-            color: #616571;
+            color:  hsl(228, 12%, 44%);
             margin-bottom: 0;
             padding: 0 20px 0 15px;
         }
@@ -100,15 +100,15 @@
 }
 
 .container.dark {
-    background-color: #252B43;
+    background-color: hsl(230, 17%, 14%);
     h5{
-        color: #fff;
+        color: hsl(0, 0%, 100%);
     }
     .follow-number {
-        color: #fff;
+        color: hsl(0, 0%, 100%);
     }
     .text-description {
-        color: #fff;
+        color: hsl(0, 0%, 100%);
         font-weight: 300;
     }
 }

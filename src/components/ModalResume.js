@@ -9,60 +9,60 @@ import {
     } from "recharts";
 
 import "./styles/ModalResume.scss";
+const dataChart = [
+    {
+        name: "4",
+        pv: 240,
+        amt: 100
+    },
+    {
+        name: "5",
+        pv: 98,
+        amt: 1000
+    },
+    {
+        name: "6",
+        pv: 207,
+        amt: 1000
+    },
+    {
+        name: "7",
+        pv: 18,
+        amt: 1000
+    },
+    {
+        name: "8",
+        pv: 290,
+        amt: 1000
+    },
+    {
+        name: "9",
+        pv: 38,
+        amt: 1000
+    },
+    {
+        name: "10",
+        pv: 39,
+        amt: 1000
+    },
+    {
+        name: "11",
+        pv: 45,
+        amt: 1000
+    },
+    {
+        name: "12",
+        pv: 144,
+        amt: 1000
+    },
+    {
+        name: "13",
+        pv: 30,
+        amt: 100
+    }
+];
 const Modalresume  = ({ data, isOpen, theme ,onClick }) => {
 
-    const dataChart = [
-        {
-            name: "4",
-            pv: 240,
-            amt: 100
-        },
-        {
-            name: "5",
-            pv: 98,
-            amt: 1000
-        },
-        {
-            name: "6",
-            pv: 207,
-            amt: 1000
-        },
-        {
-            name: "7",
-            pv: 18,
-            amt: 1000
-        },
-        {
-            name: "8",
-            pv: 290,
-            amt: 1000
-        },
-        {
-            name: "9",
-            pv: 38,
-            amt: 1000
-        },
-        {
-            name: "10",
-            pv: 39,
-            amt: 1000
-        },
-        {
-            name: "11",
-            pv: 45,
-            amt: 1000
-        },
-        {
-            name: "12",
-            pv: 144,
-            amt: 1000
-        },
-        {
-            name: "13",
-            pv: 30,
-            amt: 100
-        }
-    ];
 
     if(!isOpen) return null
     
@@ -114,7 +114,7 @@ const Modalresume  = ({ data, isOpen, theme ,onClick }) => {
                             }}
                             >
                                 <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="name" fontSize="8px" />
+                                <XAxis dataKey="name" fontSize="8px"  />
                                 <YAxis  fontSize="8px"/>
                                 <Tooltip />
                                 <Line type="monotone" dataKey="pv" stroke="hsl(243, 51%, 70%)" activeDot={{ r: 4 }} />

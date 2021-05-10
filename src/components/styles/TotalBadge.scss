@@ -1,5 +1,5 @@
 .total-bage {
-    background-color: #F0F3FA;
+    background-color: hsl(227, 47%, 96%);
     width: 160px;
     height: 140px;
     border-radius: 3px;
@@ -30,7 +30,7 @@
             font-size: 35px;
             margin-bottom: 0;
             font-weight: 700;
-            color: #000;
+            color: hsl(230, 17%, 14%);
         }
         .number--kind {
             margin-bottom: 0;
@@ -59,9 +59,9 @@
 }
 
 .total-bage.dark {
-    background-color: #252B43;
+    background-color: hsl(228, 28%, 20%);
     .big-number {
-        color: #fff;
+        color: hsl(0, 0%, 100%);
     }
 }
 .total-bage.dark:hover {
@@ -70,12 +70,12 @@
 
 .total-bage.face-border,
 .total-bage.face-border.dark {
-    border-top: 3px solid #2E8ADC;
+    border-top: 3px solid hsl(195, 100%, 50%);
 }
 
 .total-bage.twit-border,
 .total-bage.twit-border.dark {
-    border-top: 3px solid #1DA2F2;
+    border-top: 3px solid hsl(203, 89%, 53%) ;
 }
 .total-bage.insta-border,
 .total-bage.insta-border.dark {
@@ -86,18 +86,18 @@
     border-top-width: 3px;
     border-image: linear-gradient(
 60deg
-, #FBB76C, #D34F91) 1;
+, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
 }
 .total-bage.yout-border,
 .total-bage.yout-border.dark {
-    border-top: 3px solid #c4032b;
+    border-top: 3px solid hsl(348, 97%, 39%);
 }
 
 .update-number.arrow-up,
 .update-number.arrow-up.dark {
-    color: #1eb589;
+    color: hsl(163, 72%, 41%);
 }
 .update-number.arrow-down,
 .update-number.arrow-down.dark {
-    color: #dc414c;
+    color: hsl(356, 69%, 56%)c;
 }
